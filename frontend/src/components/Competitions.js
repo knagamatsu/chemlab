@@ -19,7 +19,7 @@ const CompetitionCard = ({ title, description, prize, timeLeft, participants }) 
 const Competitions = () => {
   return (
     <div className="flex bg-secondary-50 min-h-screen">
-      <Sidebar activePage="competitions" />
+      {/* <Sidebar activePage="competitions" /> */}
       <div className="flex-1 p-8">
         <header className="mb-8">
           <h1 className="text-3xl font-bold text-secondary-800 mb-2">コンペティション</h1>

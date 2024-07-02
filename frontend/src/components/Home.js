@@ -16,7 +16,7 @@ const DatasetCard = ({ title, author, updatedAt, size, fileCount }) => (
 const Home = () => {
   return (
     <div className="flex bg-secondary-50 min-h-screen">
-      <Sidebar activePage="home" />
+      {/* <Sidebar activePage="home" /> */}
       <div className="flex-1 p-8">
         <header className="mb-8">
           <h1 className="text-3xl font-bold text-primary-800 mb-2">ホーム</h1>

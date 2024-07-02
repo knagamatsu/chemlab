@@ -16,7 +16,7 @@ const DatasetCard = ({ title, author, updatedAt, size, fileCount }) => (
 const Datasets = () => {
   return (
     <div className="flex bg-secondary-50 min-h-screen">
-      <Sidebar activePage="datasets" />
+      {/* <Sidebar activePage="datasets" /> */}
       <div className="flex-1 p-8">
         <header className="mb-8">
           <h1 className="text-3xl font-bold text-secondary-800 mb-2">データセット</h1>
