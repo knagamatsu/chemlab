@@ -1,6 +1,6 @@
 # ChemLab DB: 化学メーカーの社内データセット管理アプリ
 
-![chemlab](./dataset_app.gif)
+![chemlab](./chemlab_db.gif)
 ChemLab DBは、化学メーカー向けの社内データセット管理アプリケーションです。
 Kaggleライクなインターフェースを採用し、データセットの登録、公開、および社内コンペティションの開催を可能にします。
 
