@@ -3,7 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 import { HomeIcon, FolderIcon, TrophyIcon, UsersIcon, Cog6ToothIcon, UserCircleIcon } from '@heroicons/react/24/outline';
 
 const NavItem = ({ icon: Icon, label, to, active }) => (
-  <li className={`px-2 py-3 rounded-lg mb-2 ${active ? 'bg-primary-100 text-primary-700' : 'text-secondary-600 hover:bg-primary-50 hover:text-primary-600'}`}>
+  <li className={`px-2 py-3 rounded-lg mb-2 transition-colors duration-150 ease-in-out ${
+    active 
+      ? 'bg-gray-100 text-gray-900' 
+      : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+  }`}>
     <Link to={to} className="flex items-center space-x-3">
       <Icon className="h-6 w-6" />
       <span className="font-medium">{label}</span>
@@ -11,16 +15,22 @@ const NavItem = ({ icon: Icon, label, to, active }) => (
   </li>
 );
 
+const AppLogo = () => (
+  <div className="flex items-center mb-8">
+    {/* <img src="/logo.png" alt="ChemLab DB Logo" className="h-8 w-8 mr-2" /> */}
+    <span className="text-2xl font-bold text-gray-800 app-title">
+      ChemLab DB
+    </span>
+  </div>
+);
+
 const Sidebar = () => {
   const location = useLocation();
   const activeRoute = location.pathname;
 
   return (
-    <div className="bg-white w-64 min-h-screen p-4 border-r border-primary-100">
-      <div className="flex items-center mb-8">
-        {/* <img src="/logo.png" alt="ChemLab DB Logo" className="h-8 w-8 mr-2" /> */}
-        <span className="text-2xl font-bold text-primary-800">ChemLab DB</span>
-      </div>
+    <div className="bg-white w-64 min-h-screen p-4 border-r border-gray-200">
+      <AppLogo />
       <nav>
         <ul>
           <NavItem icon={HomeIcon} label="ホーム" to="/" active={activeRoute === '/'} />
