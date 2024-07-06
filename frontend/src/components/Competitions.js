@@ -1,6 +1,5 @@
 import React from 'react';
 import { MagnifyingGlassIcon, PlusIcon } from '@heroicons/react/24/outline';
-import Sidebar from './Sidebar';
 
 const CompetitionCard = ({ title, description, prize, timeLeft, participants }) => (
   <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
